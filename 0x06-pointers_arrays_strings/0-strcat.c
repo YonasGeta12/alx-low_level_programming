@@ -1,25 +1,20 @@
 #include "main.h"
 
 /**
- * _srccat - join two strings
+ * *_srccat - fills memory with a constant byte
  * @dest: copy to
  * @src: copy from
  *
- *Return: void
+ *Return: dest
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char b, unsigned int n)
 {
-	int i;
-	int j;
+	unsigned int i;
 	
-	i = 0;
-	while (src[j] != '\0')
+	for (i=0; i<n; i++)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		src[i] = b;
 	}
-	
-	dest[i] = '\0';
-	return (dest);
+	return (dest)
 }
+	
